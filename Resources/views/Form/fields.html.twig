@@ -7,7 +7,7 @@
             Upload a file
             {% if not form.vars.disabled %}
                 <input type="file" data-url="{{ oneup_uploader_endpoint(form.vars.endpoint) }}"
-                       data-maxsize="{{ oneup_uploader_maxsize(form.vars.endpoint) }}">
+                       data-maxsize="{{ oneup_uploader_maxsize(form.vars.endpoint) }}" multiple="multiple">
             {% endif %}
         </span>
         <a href="{{ file ? resource_path(file) }}" target="_blank" class="btn btn-default fileupload-file"

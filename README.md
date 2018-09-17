@@ -140,6 +140,7 @@ Load the necessary CSS and JS in your layout (there are many way to do this)
 
     'bundles/sidusfileupload/css/fileupload.css'
 
+    'bundles/sidusfileupload/vendor/jquery-file-upload/js/vendor/jquery.ui.widget.js'
     'bundles/sidusfileupload/vendor/jquery-file-upload/js/jquery.fileupload.js'
     'bundles/sidusfileupload/vendor/jquery-file-upload/js/jquery.fileupload-jquery-ui.js'
     'bundles/sidusfileupload/vendor/jquery-file-upload/js/jquery.iframe-transport.js'
