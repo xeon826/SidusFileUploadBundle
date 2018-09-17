@@ -1,0 +1,9 @@
+services:
+    Sidus\FileUploadBundle\Stream\FileStreamerInterface:
+        alias: Sidus\FileUploadBundle\Stream\FileStreamer
+
+    Sidus\FileUploadBundle\Stream\FileStreamer:
+        class: Sidus\FileUploadBundle\Stream\FileStreamer
+        public: false
+        arguments:
+            - '@Sidus\FileUploadBundle\Manager\ResourceManagerInterface'

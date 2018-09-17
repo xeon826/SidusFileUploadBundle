@@ -1,0 +1,4 @@
+services:
+    Sidus\FileUploadBundle\Manager\ResourceManagerInterface:
+        class: Sidus\FileUploadBundle\Manager\ResourceManager
+        autowire: true

@@ -1,0 +1,33 @@
+{
+    "name": "sidus/file-upload-bundle",
+    "description": "Allow to upload files directly in Doctrine entities, based on oneup/uploader-bundle and jQuery-file-upload",
+    "keywords": [
+        "upload",
+        "doctrine",
+        "uploader"
+    ],
+    "homepage": "https://github.com/VincentChalnot/SidusFileUploadBundle",
+    "type": "library",
+    "license": "GPL-2.0",
+    "authors": [
+        {
+            "name": "Vincent Chalnot",
+            "email": "vincent@sidus.fr",
+            "homepage": "http://chalnot.fr",
+            "role": "Developer"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "Sidus\\FileUploadBundle\\": ""
+        }
+    },
+    "require": {
+        "doctrine/doctrine-bundle": ">=1.2",
+        "oneup/flysystem-bundle": "~1.13",
+        "emgag/flysystem-hash": "~1.0",
+        "oneup/uploader-bundle": "~1.7",
+        "mopa/composer-bridge": "~1.3",
+        "blueimp/jquery-file-upload": "~9.18"
+    }
+}

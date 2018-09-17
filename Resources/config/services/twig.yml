@@ -1,0 +1,7 @@
+services:
+    Sidus\FileUploadBundle\Twig\UploadExtension:
+        class: Sidus\FileUploadBundle\Twig\UploadExtension
+        public: false
+        arguments: ['@Sidus\FileUploadBundle\Manager\ResourceManagerInterface']
+        tags:
+            - { name: twig.extension }

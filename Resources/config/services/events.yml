@@ -1,0 +1,14 @@
+services:
+    Sidus\FileUploadBundle\EventListener\ResourceUploader:
+        class: Sidus\FileUploadBundle\EventListener\ResourceUploader
+        public: false
+        arguments: [ '@Sidus\FileUploadBundle\Manager\ResourceManagerInterface' ]
+        tags:
+            - { name: kernel.event_listener, event: oneup_uploader.post_persist, method: onUpload }
+
+    Sidus\FileUploadBundle\EventListener\ResourceSubscriber:
+        class: Sidus\FileUploadBundle\EventListener\ResourceSubscriber
+        public: false
+        arguments: [ '@Sidus\FileUploadBundle\Manager\ResourceManagerInterface' ]
+        tags:
+            - { name: doctrine.event_subscriber, connection: default }
